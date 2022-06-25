@@ -9,6 +9,9 @@ FOLLOW THIS STEPS
 - access <a href="http://localhost:8200">http://localhost:8201</a>
 - the frontend is in the "frontend-test" folder. Make sure you pull it and keep it in the same directory as the backend.
 - Make sure docker is installed on your machine
+- Make sure you use branch master on both apps
+- RUN composer install on terminal
+- RUN npm run dev on terminal
 - ENJOY IT!
 
 OBS: To consume API, send the requests to <a href="http://localhost:820/api/v1">http://localhost:8201/api/v1 </a>
