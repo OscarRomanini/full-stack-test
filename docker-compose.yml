@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+
+  api-test:
+    volumes:
+        - .:/var/www/html
+    build: .
+    ports:
+        - "8200:80"
+    networks:
+        - api-network
+
+  front-test:
+      volumes:
+          - ../front-test:/var/www/html
+      build: ../front-test
+      ports:
+          - "8201:80"
+      networks:
+          - api-network
+
+
+networks:
+  api-network:
+    driver: bridge
